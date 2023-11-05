@@ -1,0 +1,635 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                outline: 0px;
+            }
+            .con{
+                width: 100%;
+                height: 100%;
+                background-color: rgb(228, 228, 227);
+               
+
+            }
+            .nav{
+                width: 100%;
+                height: 60px;
+                background-color: white;
+                align-items: center;
+                display: flex;
+                
+            }
+            .left img{
+                width: 40px;
+                height: 40px;
+                position: relative;
+                left: 100px;
+                
+            }
+            .left input{
+                height: 30px;
+                width: 230px;
+                box-sizing: border-box;
+                padding-left: 30px;
+                border-radius: 10px;
+                background-color: gainsboro;
+                border-color: grey;
+                outline: 0px;
+                
+            }
+            .sa{
+                position: relative;
+                left: 70px;
+               
+            }
+            .left ::placeholder{
+                position: relative;
+                left: 30px;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                width: 30%;
+                justify-content: space-around;
+                
+
+            }
+            .cen{
+                display: flex;
+                gap: 50px;
+                position: relative;
+                top: -10px;
+                font-size: 25px;
+               padding: 50px;
+                margin: 50px;
+                color: rgb(50, 49, 49);
+            }
+            .cen img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .ceninfo{
+                left: -525px;
+                top: 25px;
+                position: relative;
+              
+            }
+            span{
+                padding: 15px;
+                font-size: 13px;
+                color: gray;
+                
+            }
+            .job{
+                position: relative;
+                left: 10;
+            }
+            .mess{
+                left: 15;
+                position: relative;
+            }
+            .ceninfo:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .ceninfo select{
+                position: relative;
+                left: 385px;
+                top: -17px;
+                border-color: white;
+                color: grey;
+                
+            }
+            .cen:hover{
+                color: black;
+                cursor: pointer;
+
+            }
+           .vl{
+            position: absolute;
+            border-right: 1px solid rgb(167, 163, 163);
+            right: 450px;
+            height: 60px;
+           }
+           .brai{
+            position: absolute;
+            right: -260px;
+            top: -25;
+            font-size: 20px;
+            color: gray;
+           }
+           .brai .brail{
+            font-size: 15px;
+            position: relative;
+            left: -18px;
+            columns: gray;
+            
+           }
+           .braill a{
+            position: relative;
+            right: -100;
+            top: -43;
+            color: orange;
+            font-size: 15px;
+            
+           }
+           .free a{
+            position: relative;
+            right: -130px;
+            top: -45px;
+            color: orange;
+            font-size: 15px;
+           }
+           .photo{
+            width: 20%;
+            height: 60%;
+            background-color: white;
+            position: relative;
+            left: 120px;
+            top: 30px;
+           border-radius: 10px;
+           border: 1px solid rgba(176, 175, 175, 0.951);
+           }
+           .photo .nav{
+            width: 100%;
+            height: 15%;
+            background-color: rgb(66, 66, 66);
+            border-radius: 10px;
+            
+           }
+           .img img{
+            width: 60px;
+            height: 60px;
+            border: 1px solid gainsboro;
+            border-radius: 50%;
+            padding: 1px;
+            background-color: aliceblue;
+            position: relative;
+            left: 100px;
+            top: 30px;
+           }
+           .photo p{
+            text-align: center;
+            position: relative;
+            top: 50px;
+           }
+           .photo hr{
+            position: relative;
+            top: 70px;
+            color: rgb(84, 84, 84);
+
+           }
+           .grow p{
+            position: relative;
+            right: 51px;
+            top: 90px;
+           }
+           .grow .ect{
+            position: relative;
+            right: 80px;
+            top: 90px;
+            color: gray;
+
+           }
+           .grow a{
+            position: absolute;
+            right: 30px;
+            bottom: 220px;
+            text-decoration: none;
+            color: blue;
+           }
+           
+           .gh hr{
+            position: relative;
+            top: 100px;
+
+           }
+            .hg{
+            top: 115px;
+            position: relative;
+            padding: 10px;
+            color: gray;
+           }
+           .fd a{
+            top: 110px;
+            position: relative;
+            padding: 10px;
+            color: black;
+            font-weight: 800;
+            left: 35px;
+}
+.as hr{
+    position: relative;
+            top: 125px;
+
+}
+.da{
+    top: 137px;
+            position: relative;
+            padding: 10px;
+            color: black;
+            font-weight: 400;
+            left: 30px;
+}
+
+.midd{
+    width: 40%;
+    height: 20%;
+    background-color: white;
+    position: relative;
+    left: 460px;
+    top: -400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.midd img{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.midd input{
+    position: relative;
+    top: -50px;
+    left: 100px;
+    width: 80%;
+    height: 30%;
+    border-radius: 40px;
+}
+.midd ::placeholder{
+                position: relative;
+                left: 20px;
+}
+.middd{
+    display: flex;
+   width: 100%;
+   justify-content: space-around;
+   font-size: 22px;
+  }
+.midddd{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.middd .a{
+    color: #378FE9
+}
+.middd .b{
+    color: #5F9B41;
+}
+.middd .c{
+    color: #C37D17;
+}
+.middd .d{
+    color: #E16745;
+}
+.midddd p{
+    position: relative;
+    top: -20px;
+    left: 37px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 500;
+}
+.ppp{
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    bottom: 37px;
+    left: 120px;
+    border: 1px solid #E0DFDC;
+    border-radius: 10px;
+    }
+.ppp .pp{
+    box-sizing: border-box;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    color: #0B66C2;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    
+
+}
+.para{
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 10px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    }
+.dnd{
+    width: 40%;
+    height: 58%;
+    background-color: rgb(228, 228, 227);
+    position: relative;
+    top: -64%;
+    left: 32%;
+    border-radius: 10px;
+   
+}
+.dnd img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.photo .nav{
+    background-image: url("profile.png");
+    background-size: cover;
+}
+.info{
+    width: 20%;
+    height: 48%;
+    background-color: white;
+    position: absolute;
+    bottom: 39%;
+    right:6%;
+    border-radius: 3%;
+    
+}
+   
+.info p{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    
+}
+.info .ee{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+}
+.info ul{
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 13.9px;
+    font-weight: 680;
+    margin: 14px;
+    color: rgb(40, 39, 39);
+    
+    }
+    .abcde{
+        color: gray;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .info li{
+        padding-top: 10px;
+    }
+    .info select{
+        padding: 10px;
+        margin: 10px;
+        font-size: 17px;
+        border-color: white;
+        color: gray;
+
+    } .last{
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    bottom: 12%;
+    right:6%;
+    border-radius: 3%;
+    background-color: white;
+    border-radius: 5px;
+    
+
+}
+.last .ut{
+    width: 100%;
+    background-color: white;
+    height: 40%;
+    border: 5px;
+}
+.ut p{
+    text-align: end;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.ut div{
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+
+}
+.lml img{
+    width: 70px;
+    height: 40%;
+   
+   border-radius: 50%;
+   position: relative;
+   left: 60px;
+   bottom:  5px;
+
+   
+
+    
+}
+#fff img{
+    width: 60px;
+    height: 35%;
+    position: absolute;
+    padding-left: 50%;
+    bottom: 25%;
+}
+.hsl{
+    text-align: center;
+}
+.hsl button{
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+    color: #0B66C2;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #0B66C2;
+}
+.joker{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    bottom: 5%;
+    right:6%;
+    border-radius: 3%;
+  }
+.joker{
+    background-color:#E4E4E3;
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+.joker select{
+    background-color: #E4E4E3;
+    border-color: #E4E4E3;
+
+}
+.jam img{
+    position: relative;
+    top: 105px;
+   width: 20px;
+   height: 30px;
+   padding-left: 10px;
+ 
+}
+.cid{
+    position: relative;
+    top: 140px;
+   width: 20px;
+   height: 30px;
+   padding-left: 10px;
+
+}
+   
+  
+</style>
+
+<div class="vl"></div>
+</style>
+    </head>
+    <body>
+        <div class="con">
+            <div class="nav">
+                <div class="vl"></div>
+                
+                <div class="left">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="">
+                    <i class="sa fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"></i>
+                </div>
+                <div class="cen">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://cdn.wallpapersafari.com/13/50/xeNjrU.jpg"/>
+                    </div>
+                    <div class="ceninfo">
+                       <p><span>Home</span><span>My Network <span class="job">Jobs</span><span class="mess">Messeging</span><span>Notification</span></p>
+                       <select name="" id="">
+                        <option value="">Me</option>
+                       </select>
+                       <div class="brai">
+                        <i class="fa-solid fa-list"></i><p class="brail">For Business</p><p class="braill"><a href="#">Try Premium for <p class="free">free</p></a>
+                       </div>
+                    </div>
+           </div>
+        <div class="photo">
+            <div class="nav">
+              
+                <div class="img"><img src="https://wallpapers.com/images/hd/best-profile-pictures-xrona5c4apl7qvrj.jpg" alt=""></div>
+                </div>
+                <p><b>Manish Kumar</p></b>
+                <p>Attended Vector India, hyderabad</p>
+                <hr/>
+                <div class="grow">
+                    <p class="ect">Connections</p>
+                    <p><b>Grow Your Network</b></p>
+                   
+                    <a href=""><b>2</a></b>
+                    </div>
+                    <div class="gh"><hr/></div>
+                    <div class="hg">Acess exclusive tools & insights</div>
+                    <div class="cid"><img src="123.jpeg" alt=""></div>
+                    <div class="fd"><a href="#">Try premium for free</a></div>
+                    <div class="as"><hr/></div>
+                   <div class="da">My items</div>
+                   <div class="jam"><img src="items.png"></div>
+                </div>
+            <div class="midd">
+                <div class="img"><img src="https://wallpapers.com/images/hd/best-profile-pictures-xrona5c4apl7qvrj.jpg" alt=""></div>
+               
+                   <input type="text" name="" id="" placeholder="Start a Post">
+                   <div class="middd">
+                    <i class="a fa-solid fa-image"></i>
+                    <i class="b fa-solid fa-play"></i>
+                    <i class="c fa-solid fa-calendar-days"></i>
+                    <i class="d fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="midddd">
+                        <p>Photo</p>
+                        <p>Video</p>
+                        <p>Event</p>
+                        <p>Article</p>
+
+                    </div>
+                   </div>
+                </div>
+                <div class="ppp">
+                    <div class="pp">
+                        <p><b>Groups</b></p>
+                        <p><b>Events</b></p>
+                        <p><b>Followed Hashtags</b></p>
+                        </div>
+                    <hr/>
+                    <p class="para">Discover More</p>
+                </div>
+</div>
+           <div class="dnd">
+           
+
+           </div>
+           <div class="info">
+            <p><b>Linkdin News</b></p><i class="ee fa-solid fa-circle-info"></i>
+           
+                <ul>
+                    <li>HR focus on 'sandwich generation</li>
+                    <div class="abcde">1h ago</div>
+                    <li>Decoding cyber skills demand</li>
+                    <div class="abcde">3h ago</div>
+                    <li>Buy-now-pay-later hits growth slu...</li>
+                    <div class="abcde">6h ago</div>
+                    <li>Edtech in offline expansion mode</li>
+                    <div class="abcde">1d ago</div>
+                    <li>More takers for premium liquor</li>
+                    <div class="abcde">7h ago</div>
+                </ul>
+               <select name="" id="">
+                <option value="">Show more</option>
+                <option value="">News</option>
+                <option value="">Latest</option>
+               </select>
+            
+
+
+           </div>
+           <div class="last">
+            <div class="ut">
+                <p class="tt">ad    ...</p>
+                <div>Imagine Your next career move</div>
+            </div>
+         <div class="lml"><img src="https://wallpapers.com/images/hd/best-profile-pictures-xrona5c4apl7qvrj.jpg"/></div>
+            <div id="fff"><img src="pppp.png"/></div>
+            <div class="hsl"><button>Follow</button></div>
+
+           </div>
+           <div class="joker">
+            <p>About</p><p>Accessibility</p><p>Help Center</p>
+            <select>
+                <option value="">Privacy & Terms</option>
+                <option value="">okkk</option>
+            </select>
+            <p>Ads and choices</p>
+
+           </div>
+            </div>
+       </body>
+</html>
